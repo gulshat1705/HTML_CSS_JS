@@ -1,0 +1,49 @@
+@media screen and (max-width: 1100px){
+	.slack{
+		margin: 0 auto;
+	}
+	.adobe{
+		margin: 0 auto;
+	}
+	.facebook{
+		margin: 0 auto;
+	}
+	.spotify{
+		margin: 0 auto;
+	}
+	.nike{
+		margin: 0 auto;
+	}
+}
+@media screen and (max-width: 786px){
+	h5{
+		padding: 107px 0 50px;
+	}
+	.main-slide img{
+		margin: 140px 0 0 0;
+	}
+	header{
+		height: 140px;
+	}
+	.btn{
+		position: absolute;
+		top: 0;
+		right: 25px;
+	}
+	.logo{
+		padding: 29px 220px 29px 20px;
+		margin: 0 10px 0 0;
+	}
+	.nav li a{
+		padding: 11px 1px 7px 1px;
+	}
+	.logos-item{
+		width: 33.3%;
+	}
+	.clients{
+		width: 100%;
+	}
+	.gal-item{
+		width: 50%;
+	}
+}

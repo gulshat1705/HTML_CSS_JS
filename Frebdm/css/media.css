@@ -1,0 +1,38 @@
+@media screen and (max-width: 1200px){	
+	.col {
+		width: 33.3333%;
+	}
+}
+@media screen and (max-width: 992px){	
+	.col {
+		width: 50%;
+	}
+}
+@media screen and (max-width: 768px){	
+	.teem-item {
+		width: 50%;
+	}
+	.images .img{
+		width: 33.3333%;
+	}
+}
+@media screen and (max-width: 580px){	
+	.col {
+		width: 100%;
+	}
+	.images .img{
+		width: 50%;
+	}
+}
+@media screen and (max-width: 520px){	
+	.teem-item{
+		width: 100%;	
+		margin: 0 5% 20px;
+	}
+	.images .img{
+		width: 50%;		
+	}
+	.block-liberte, .block-poster h2 {
+		padding-top: 25px;
+	}
+}

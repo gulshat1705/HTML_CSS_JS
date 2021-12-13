@@ -1,0 +1,65 @@
+@media screen and (max-width: 965px){
+	.title{
+		text-align: center;
+		display: block;
+		width: 100%;
+		padding: 31px 30px 31px 12px;
+	}
+	.data-center-calc{
+		display: block;
+		margin: 0 auto;
+		position: relative;
+		top: 0;
+		padding: -10px;
+	}
+	.data-center-calc div{
+		text-align: center;
+	}
+	.data-center-calc p{
+		text-align: left;
+	}
+	.block h6{
+		font-size: 28px;
+	}
+	.tool-icons div{
+		padding: 30px 15% 18px;
+	}
+	.tool-icons a{
+		width: 28%;
+	}
+}
+@media screen and (max-width: 786px){
+	aside{
+		width: 50%;
+	}
+}
+@media screen and (max-width: 555px){
+	.tool-icons div{
+		padding: 30px 5% 18px;
+	}
+}
+@media screen and (max-width: 480px){
+	aside{
+		width: 100%;
+	}
+	.calc{
+		font-size: 59px;
+		padding: 21px 0px 21px 100px;
+	}
+	.calc::before {
+	    content: '';
+		position: absolute;
+	    top: 20px;
+	    left: 20px;
+	    width: 62px;
+	    height: 71px;
+	    background: url(../img/calc_data_centers.png) 0 0 no-repeat;
+	}
+	.calc-text{
+		font-size: 24px;
+		padding: 0 30px 0 20px;
+	}
+	.tool-icons a{
+		width: 42%;
+	}
+}

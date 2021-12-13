@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Mountains</title>
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Raleway:700" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+		<link rel="stylesheet" href="fonts/fonts.css">
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/media.css">
+	</head>
+	<body>
+		<div class="main-slide" id="main-slide">
+			<img src="upload/header_background.jpg" width="1920" height="698" alt="header_background">
+		</div>
+		<header>
+			<nav class="container header">
+				<a href="#" class="logo">Moun<span>tains</span></a>
+				<ul class="nav">
+					<li><a href="#main-slide">main slide</a></li>
+					<li><a href="#gallery">gallery</a></li>
+					<li><a href="#client">Clients say</a></li>
+					<li><a href="#contact">contacts</a></li>
+				</ul>
+				<a href="#call-us" class="btn open_modal">call us</a>
+			</nav>
+		</header>
+		<div class="gallery container clearfix" id="gallery">
+			<h5>gallery</h5>
+			<div class="gal-item">
+				<img src="upload/gallery_img_1.jpg" width="360" height="243" alt="img-1">
+			</div>
+			<div class="gal-item">
+				<img src="upload/gallery_img_2.jpg" width="360" height="243" alt="img-2">
+			</div>
+			<div class="gal-item">
+				<img src="upload/gallery_img_3.jpg" width="360" height="243" alt="img-3">
+			</div>
+			<div class="gal-item">
+				<img src="upload/gallery_img_4.jpg" width="360" height="243" alt="img-4">
+			</div>
+			<div class="gal-item">
+				<img src="upload/gallery_img_5.jpg" width="360" height="243" alt="img-5">
+			</div>
+			<div class="gal-item">
+				<img src="upload/gallery_img_6.jpg" width="360" height="243" alt="img-6">
+			</div>		
+		</div>
+		<div class="logos clearfix">
+			<div class="container">
+				<div class="logos-item"><a href="#" class="slack"></a></div>
+				<div class="logos-item"><a href="#" class="adobe"></a></div>
+				<div class="logos-item"><a href="#" class="google"></a></div>
+				<div class="logos-item"><a href="#" class="facebook"></a></div>
+				<div class="logos-item"><a href="#" class="spotify"></a></div>
+				<div class="logos-item"><a href="#" class="nike"></a></div>
+			</div>
+		</div>
+		<div class="clients-block clearfix">
+			<div class="container">
+				<div class="clearfix" id="client">
+					<h5>our clients say</h5>
+					<div class="clients">
+						<p class="client-say">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do  enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse </p>
+						<p class="client pavliv">Pavliv Yaroslav <span>Web designer</span></p>
+					</div>	
+					<div class="clients">
+						<p class="client-say">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse </p>
+						<p class="client scott">Jhon Scott <span>The Fringe</span></p>
+					</div>
+				</div>
+				
+				<div class=" outer-block clearfix" id="contact">
+					<div class="form-block">
+						<form id="registr-form">
+							<h6>contacts</h6>
+							<p class="contact-text">Sign up for our newsletter to receive updates</p>
+							<div class="form-row clearfix">
+								<input type="text" name="name" id="name" placeholder="Name">
+							</div>
+							<div class="form-row clearfix">
+								<input type="text" id="digits" name="digits" placeholder="Phone">
+							</div>
+							<div class="form-row clearfix">
+								<input type="email" id="email" name="email" placeholder="Email">
+							</div>
+							<input type="submit" name="submit" class="button" value="send">
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="form-block modal clearfix" id="call-us" style="display: none;">
+			<form id="contact-form">
+				<h6>contacts</h6>
+				<p class="contact-text">Sign up for our newsletter to receive updates</p>
+				<div class="form-row clearfix">
+					<input type="text" name="name" id="name" placeholder="Name">
+				</div>
+				<div class="form-row clearfix">
+					<input type="text" id="digits" name="digits" placeholder="Phone">
+				</div>
+				<div class="form-row clearfix">
+					<input type="email" id="email" name="email" placeholder="Email">
+				</div>
+				<input type="submit" name="submit" class="button" value="send">
+			</form>
+		</div>
+		<div class="overlay" style="display: none"></div>
+
+		<script src="vendor/jquery-3.3.1.min.js"></script>
+		<script src="vendor/jquery.validate.min.js"></script>
+		<script src="js/core.js"></script>
+	</body>
+</html>

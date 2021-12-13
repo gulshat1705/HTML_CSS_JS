@@ -1,0 +1,1026 @@
+html, body, div, span, object, iframe, img, strong, b, u, i, table, tbody, tfoot, thead, td, th, tr form, label, legend, header, footer, article, section, aside {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+input:focus, select:focus, textarea:focus, button:focus {
+    outline: none;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+.clear {
+    clear: both;
+    font-size: 0;
+}
+
+.clearfix::after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+button {
+    cursor: pointer;
+}
+
+input[type="button"], input[type="submit"] {
+    cursor: pointer;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+input, select, textarea, button {
+    font-family: arial, helvetica, sans-serif;
+    font-weight: 400;
+    color: #000;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Fjalla One", sans-serif;
+    color: #000;
+    background: #29606b;
+    font-size: 14px;
+    line-height: 1.3;
+    min-width: 320px;
+}
+
+.container {
+    min-width: 320px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.info-title {
+    font-family: "Fjalla One", sans-serif;
+    font-weight: normal;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 29px;
+    margin: 0;
+}
+
+.box-txt {
+    font-family: "Source Sans Pro", sans-serif;
+    color: #fff;
+    font-size: 16px;
+    margin: 0;
+    font-weight: 400;
+}
+
+.header {
+    position: relative;
+}
+
+.header::after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+.header__container {
+    padding: 0 15px;
+}
+
+.header__container::after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+.header__block {
+    margin: 0;
+    padding: 0;
+    background-color: #29606b;
+    border: 1px solid #2a6c78;
+    opacity: 0.8;
+}
+
+.header__block::after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+.logo {
+    float: left;
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+
+.logo__link {
+    font-family: "Fjalla One", sans-serif;
+    font-size: 25px;
+    font-weight: normal;
+    display: inline-block;
+    text-decoration: none;
+    padding: 25px 28px 20px;
+    margin: 0;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.main-nav {
+    display: block;
+    float: right;
+}
+
+@media screen and (max-width: 640px) {
+    .main-nav {
+        display: none;
+        position: absolute;
+        left: auto;
+        top: 77px;
+        right: 15px;
+        bottom: auto;
+        height: auto;
+        width: 78px;
+        background-color: #29606b;
+        border: 1px solid #2a6c78;
+        opacity: 0.8;
+    }
+}
+
+.main-nav__list {
+    display: inline-block;
+    padding: 5px 12px 0 12px;
+    margin: 0;
+}
+
+@media screen and (max-width: 640px) {
+    .main-nav__list {
+        height: auto;
+        padding: 5px 0;
+    }
+}
+
+.main-nav__item {
+    display: inline-block;
+    padding: 0 10px 0 0px;
+    margin: 0;
+}
+
+@media screen and (max-width: 640px) {
+    .main-nav__item {
+        display: block;
+        padding: 3px 0 0;
+    }
+}
+
+.main-nav__link {
+    display: inline-block;
+    text-decoration: none;
+    font-family: "Fjalla One", sans-serif;
+    font-weight: normal;
+    font-size: 17px;
+    color: #fff;
+    margin: 0;
+    padding: 23px 12px 23px 11px;
+}
+
+.main-nav__link:hover {
+    color: #abbbbe;
+}
+
+@media screen and (max-width: 640px) {
+    .main-nav__link {
+        padding: 5px;
+        text-align: left;
+    }
+}
+
+.main-nav-btn {
+    display: none;
+    float: right;
+    width: 77px;
+    height: 77px;
+    background: #29606b;
+    position: relative;
+    cursor: pointer;
+    z-index: 30;
+    border-left: 1px solid #2a6c78;
+}
+
+@media screen and (max-width: 640px) {
+    .main-nav-btn {
+        display: block;
+    }
+}
+
+.main-nav-btn span {
+    width: 18px;
+    height: 2px;
+    background: #fff;
+    position: absolute;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    right: auto;
+    bottom: auto;
+    margin: -1px 0 0 -9px;
+}
+
+.main-nav-btn span::before, .main-nav-btn span::after {
+    content: "";
+    width: 18px;
+    height: 2px;
+    background: #fff;
+    position: absolute;
+    left: 0;
+    transition: transform 1s;
+}
+
+.main-nav-btn span::before {
+    top: -5px;
+}
+
+.main-nav-btn span::after {
+    bottom: -5px;
+}
+
+.active span {
+    background: transparent;
+}
+
+.active span::before {
+    transform: rotate(45deg);
+    top: 0;
+}
+
+.active span::after {
+    transform: rotate(-45deg);
+    bottom: 0;
+}
+
+.promo {
+    background-image: url(../img/promo-bg.jpg);
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    margin: -90px 0 0;
+    padding: 222px 0 210px;
+    text-align: center;
+}
+
+.promo__title {
+    display: block;
+    padding: 5px 0;
+    margin: 0;
+    text-transform: uppercase;
+    font-family: "Fjalla One", sans-serif;
+    font-weight: normal;
+    font-size: 41px;
+    letter-spacing: 0.12em;
+    color: #fff;
+}
+
+@media screen and (max-width: 840px) {
+    .promo__title {
+        font-size: 32px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .promo__title {
+        font-size: 28px;
+    }
+}
+
+.promo__title-txt {
+    display: block;
+    padding: 13px 0 26px;
+    margin: 0;
+    text-transform: uppercase;
+    font-family: "Fjalla One", sans-serif;
+    font-weight: normal;
+    font-size: 31px;
+    letter-spacing: 0.16em;
+    line-height: 30px;
+    color: #fff;
+}
+
+@media screen and (max-width: 840px) {
+    .promo__title-txt {
+        font-size: 26px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .promo__title-txt {
+        font-size: 20px;
+    }
+}
+
+.promo__btn {
+    width: 142px;
+    background: transparent;
+    border: 2px solid #fff;
+    border-bottom: none;
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+
+.promo__btn::before, .promo__btn::after {
+    content: "";
+    width: calc(50% - 9px);
+    height: 2px;
+    background-color: #fff;
+}
+
+.promo__btn::before {
+    position: absolute;
+    left: 0;
+    top: auto;
+    right: auto;
+    bottom: 0;
+}
+
+.promo__btn::after {
+    position: absolute;
+    left: auto;
+    top: auto;
+    right: 0;
+    bottom: 0;
+}
+
+.promo__btn-txt {
+    text-transform: uppercase;
+    color: #fff;
+    font-family: "Fjalla One", sans-serif;
+    font-weight: normal;
+    font-size: 17px;
+    background: transparent;
+    padding: 0 33px;
+    line-height: 44px;
+    margin: 0;
+    position: relative;
+}
+
+.promo__btn-txt::before, .promo__btn-txt::after {
+    content: "";
+    width: 15px;
+    height: 2px;
+    background-color: #fff;
+}
+
+.promo__btn-txt::before {
+    position: absolute;
+    left: 50%;
+    top: auto;
+    right: auto;
+    bottom: -16.5px;
+    margin-left: -12px;
+    transform: rotate(45deg);
+}
+
+.promo__btn-txt::after {
+    position: absolute;
+    left: auto;
+    top: auto;
+    right: 50%;
+    bottom: -16.5px;
+    margin-right: -12px;
+    transform: rotate(-45deg);
+}
+
+.section {
+    padding: 0 0 40px 0;
+    text-align: center;
+    margin-top: -80px;
+}
+
+.section::after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+.section__block {
+    padding: 0 15px;
+}
+
+.section__box {
+    padding: 59px 0 52px;
+    float: left;
+    width: 50%;
+}
+
+@media screen and (max-width: 640px) {
+    .section__box {
+        width: 100%;
+    }
+}
+
+.section__box-title {
+    padding: 124px 22px 5px 22px;
+    height: 162px;
+    overflow: hidden;
+    position: relative;
+}
+
+.section__box-title::before {
+    content: "";
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    right: auto;
+    bottom: auto;
+    background-color: #fff;
+    border-radius: 50%;
+    margin-left: -50px;
+}
+
+.section__box-vestibulum {
+    background-color: #e84c3d;
+}
+
+.section__box-title-vestibulum::after {
+    content: "";
+    width: 54px;
+    height: 54px;
+    position: absolute;
+    left: auto;
+    top: 23px;
+    right: 50%;
+    bottom: auto;
+    background: url(../img/icon-conversation.png);
+    margin-right: -27px;
+}
+
+.section__box-integer {
+    background-color: #fdbd1f;
+}
+
+.section__box-title-integer::after {
+    content: "";
+    width: 49px;
+    height: 49px;
+    position: absolute;
+    left: auto;
+    top: 26px;
+    right: 50%;
+    bottom: auto;
+    background: url(../img/icon-pencil.png);
+    margin-right: -24px;
+}
+
+.section__box-tempor {
+    background-color: #1bbc9b;
+}
+
+.section__box-title-tempor::after {
+    content: "";
+    width: 53px;
+    height: 46px;
+    position: absolute;
+    left: auto;
+    top: 25px;
+    right: 50%;
+    bottom: auto;
+    background: url(../img/icon-crown.png);
+    margin-right: -26px;
+}
+
+.section__box-felis {
+    background-color: #9b58b5;
+}
+
+.section__box-title-felis::after {
+    content: "";
+    width: 56px;
+    height: 53px;
+    position: absolute;
+    left: auto;
+    top: 21px;
+    right: 50%;
+    bottom: auto;
+    background: url(../img/icon-user.png);
+    margin-right: -28px;
+}
+
+.section__box-txt {
+    padding: 7px 60px;
+    line-height: 18px;
+    overflow: hidden;
+    height: 64px;
+}
+
+.info-block {
+    margin: 0;
+    padding: 20px 0 62px;
+    text-align: center;
+}
+
+.info-block::after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+.info-block__container {
+    padding: 0;
+}
+
+.info-block__container::after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+.info-block__title {
+    padding: 15px 0 5px;
+}
+
+.info-block__title-txt-block, .connect__title-txt-block {
+    overflow: hidden;
+    padding: 0 0 50px 0;
+    margin: 0;
+}
+
+.info-block__title-txt, .connect__title-txt {
+    display: inline-block;
+    text-transform: uppercase;
+    padding: 4px 20px 0 20px;
+    font-family: "Fjalla One", sans-serif;
+    font-weight: normal;
+    font-size: 21px;
+    position: relative;
+}
+
+.info-block__title-txt::after, .connect__title-txt::after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+.info-block__title-txt::before, .connect__title-txt::before, .info-block__title-txt::after, .connect__title-txt::after {
+    content: "";
+    width: 27%;
+    height: 1px;
+    background-color: #387d89;
+}
+
+.info-block__title-txt::before, .connect__title-txt::before {
+    position: absolute;
+    left: -27%;
+    top: 18px;
+    right: auto;
+    bottom: auto;
+}
+
+.info-block__title-txt::after, .connect__title-txt::after {
+    position: absolute;
+    left: auto;
+    top: 18px;
+    right: -27%;
+    bottom: auto;
+}
+
+.info-block__box {
+    float: left;
+    width: 33.3%;
+    padding: 15px;
+}
+
+@media screen and (max-width: 840px) {
+    .info-block__box {
+        width: 100%;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+}
+
+.info-block__inner-box {
+    padding: 0 0 62px 0;
+    margin: 0;
+    background-color: #245963;
+}
+
+.info-block__box-txt {
+    padding: 27px 30px 32px 30px;
+    line-height: 26px;
+}
+
+.info-block__img {
+    display: inline-block;
+    border-radius: 50%;
+    margin: 44px 0 0 0;
+}
+
+.info-block__btn {
+    width: 102px;
+    border: none;
+    text-transform: uppercase;
+    font-family: "Fjalla One", sans-serif;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 34px;
+    position: relative;
+    color: #fff;
+}
+
+.info-block__btn::before {
+    content: "";
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    left: 50%;
+    top: auto;
+    right: auto;
+    bottom: -7px;
+    margin-left: -8px;
+    transform: rotate(45deg);
+}
+
+.info-block__btn-cing {
+    background-color: #e84c3d;
+}
+
+.info-block__btn-cing::before {
+    background-color: #e84c3d;
+}
+
+.info-block__box-cing {
+    border-top: 7px solid #e84c3d;
+}
+
+.info-block__btn-joren {
+    background-color: #fdbd1f;
+}
+
+.info-block__btn-joren::before {
+    background-color: #fdbd1f;
+}
+
+.info-block__box-joren {
+    border-top: 7px solid #fdbd1f;
+}
+
+.info-block__btn-lorem {
+    background-color: #1bbc9b;
+}
+
+.info-block__btn-lorem::before {
+    background-color: #1bbc9b;
+}
+
+.info-block__box-lorem {
+    border-top: 7px solid #1bbc9b;
+}
+
+.connect {
+    margin: 0;
+    padding: 0 0 80px;
+    text-align: center;
+}
+
+.connect::after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+.connect__container {
+    padding: 0;
+}
+
+.connect__container::after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+.connect__title {
+    padding: 129px 0 5px;
+    position: relative;
+}
+
+.connect__title::before {
+    content: "";
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 50%;
+    top: 3px;
+    right: auto;
+    bottom: auto;
+    background-color: #fff;
+    border-radius: 50%;
+    margin-left: -50px;
+}
+
+.connect__title::after {
+    content: "";
+    width: 54px;
+    height: 49px;
+    position: absolute;
+    left: auto;
+    top: 27px;
+    right: 50%;
+    bottom: auto;
+    background: url(../img/icon-mail.png);
+    margin-right: -27px;
+}
+
+.connect__title-txt-block {
+    padding-bottom: 19px;
+}
+
+.connect__form {
+    max-width: 630px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.connect__input-block, .connect__textarea-block {
+    margin: 0;
+    padding: 15px;
+    width: 50%;
+    float: left;
+}
+
+@media screen and (max-width: 640px) {
+    .connect__input-block, .connect__textarea-block {
+        width: 100%;
+    }
+}
+
+.connect__input-name, .connect__input-email, .connect__textarea {
+    margin: 0;
+    padding: 12px 15px;
+    width: 100%;
+    background-color: #245963;
+    border: 1px solid #387d89;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    color: #fff;
+}
+
+.connect__textarea-block {
+    width: 100%;
+}
+
+.connect__textarea {
+    min-height: 126px;
+}
+
+.connect__btn-block {
+    width: 100%;
+    float: left;
+    padding: 11px 0;
+}
+
+.connect__btn {
+    margin: 0 auto;
+    width: 102px;
+    border: 1px solid #387d89;
+    border-bottom: none;
+    position: relative;
+    background-color: #245963;
+}
+
+.connect__btn::before, .connect__btn::after {
+    content: "";
+    width: calc(50% - 11px);
+    height: 1px;
+    background-color: #387d89;
+}
+
+.connect__btn::before {
+    position: absolute;
+    left: 0;
+    top: auto;
+    right: auto;
+    bottom: 0;
+}
+
+.connect__btn::after {
+    position: absolute;
+    left: auto;
+    top: auto;
+    right: 0;
+    bottom: 0;
+}
+
+.connect__btn-txt {
+    text-transform: uppercase;
+    font-family: "Fjalla One", sans-serif;
+    font-weight: normal;
+    font-size: 15px;
+    letter-spacing: 0.01em;
+    line-height: 34px;
+    position: relative;
+    color: #fff;
+}
+
+.connect__btn-txt::before {
+    content: "";
+    width: 16px;
+    height: 16px;
+    background-color: #245963;
+    border-left: 1px solid #387d89;
+    border-bottom: 1px solid #387d89;
+    position: absolute;
+    left: 50%;
+    top: auto;
+    right: auto;
+    bottom: -17px;
+    margin-left: -9px;
+    transform: rotate(-45deg);
+}
+
+.footer {
+    background-color: #245963;
+}
+
+.footer::after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+.footer__block {
+    text-align: center;
+    padding: 20px;
+}
+
+.footer__contact-block {
+    width: 430px;
+    padding: 21px 12px 67px 12px;
+    margin: 0 auto;
+    position: relative;
+}
+
+@media screen and (max-width: 640px) {
+    .footer__contact-block {
+        width: 320px;
+        padding: 0px 12px 77px 12px;
+    }
+}
+
+.footer__contact-block::after {
+    content: "";
+    width: 80%;
+    height: 1px;
+    background-color: #387d89;
+    position: absolute;
+    left: 50%;
+    top: auto;
+    right: auto;
+    bottom: 0;
+    margin-left: -40%;
+}
+
+.footer__email, .footer__phone {
+    float: left;
+    color: #fff;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 15px;
+    font-weight: normal;
+    display: inline-block;
+    padding: 7px 0;
+    height: 36px;
+    vertical-align: middle;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 640px) {
+    .footer__phone {
+        margin-top: -20px;
+    }
+}
+
+.footer__face, .footer__twitter {
+    float: left;
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: #fff;
+    margin: 0 5px;
+    position: relative;
+}
+
+@media screen and (max-width: 640px) {
+    .footer__face, .footer__twitter {
+        margin-top: 17px;
+    }
+}
+
+.footer__face::before {
+    content: "";
+    width: 10px;
+    height: 18px;
+    position: absolute;
+    left: 13px;
+    top: 9px;
+    right: auto;
+    bottom: auto;
+    background: url(../img/face.svg) 0 0 no-repeat;
+}
+
+.footer__face:hover.footer__face::before {
+    background-image: url(../img/face-hover.svg);
+}
+
+.footer__twitter::before {
+    content: "";
+    width: 16px;
+    height: 15px;
+    position: absolute;
+    left: 11px;
+    top: 11px;
+    right: auto;
+    bottom: auto;
+    background: url(../img/twitter.svg) 0 0 no-repeat;
+}
+
+.footer__twitter:hover.footer__twitter::before {
+    background-image: url(../img/twitter-hover.svg);
+}
+
+.footer__resources {
+    padding: 23px 0 8px;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 1050px) {
+    .footer__resources {
+        max-width: 500px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .footer__resources {
+        max-width: 320px;
+    }
+}
+
+.footer__resources-txt, .footer__resources-link {
+    margin: 0;
+    padding: 10px 0;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+}
+
+@media screen and (max-width: 1050px) {
+    .footer__resources-txt, .footer__resources-link {
+        padding-bottom: 0;
+    }
+}
+
+.footer__resources-txt-img-from {
+    padding-left: 5px;
+}
+
+.footer__resources-link-design-by {
+    color: #fdbd1f;
+    padding-right: 10px;
+    position: relative;
+}
+
+@media screen and (max-width: 1050px) {
+    .footer__resources-link-design-by::after {
+        display: none;
+    }
+}
+
+.footer__resources-link-design-by::after {
+    content: "/";
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    color: #fff;
+    position: absolute;
+    left: auto;
+    top: 10px;
+    right: 0;
+    bottom: auto;
+}

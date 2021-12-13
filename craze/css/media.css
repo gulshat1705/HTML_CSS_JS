@@ -1,0 +1,20 @@
+@media screen and (max-width: 980px){
+	.main-pic{
+		height: 70%;
+		right: 0;
+	}
+	.header-txt{
+		padding-left: 3%;
+	}
+}
+@media screen and (max-width: 520px){
+	.main-pic{
+		display: none;
+	}
+	.header-txt{
+		text-align: center;
+		font-size: 20px;
+		width: 100%;
+		padding-right: 3%;
+	}
+}
